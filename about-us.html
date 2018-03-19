@@ -1,0 +1,101 @@
+<html>
+
+    <head>
+        <title>About us</title>
+        <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/responsive.css">
+        <script src="resources/js/jquery-3.2.1.min.js"></script>
+        <script src="resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="resources/js/vue.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class='header-title'>EY SI DYI TRADING AND MFG.CO</div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#myNavbar">Menu</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a class='nav-item-link' href="index.html">home</a></li>
+                            <li class="nav-item"><a class='nav-item-link' href="about-us.html">about us</a></li>
+                            <li class="nav-item"><a class='nav-item-link' href="services.html">services</a></li>
+                            <li class="nav-item"><a class='nav-item-link' href="products.html">products</a></li>
+                            <li class="nav-item">
+                                <a class='nav-item-link' href=contact-us.html>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="content container" id="about_us_vue">
+            <p class="text-content">
+                <a class=link>Ey-Si-Dyi Trading & Mfg. Co.</a> is  a  Philippine  based  <a class=link>Traction  Battery</a>  dealership  and  reconditioning  company.  We  are  one  of  the  prominent suppliers of Traction Batteries which are required highly in various kinds  of industries. We provide the best solutions for your Industrial Traction Battery and  Electric Vehicles Battery needs.<br>
+                Our Company looks after your satisfaction and  your safety as well.  Our business is selling brand new, fully reconditioned batteries and new battery  parts  &  accessories.  We  also  do  battery  recycling,  general  reEplating  and  replacement of defective battery cells, service onEsite battery testing, repairing and  installation.  We can also offer service and repair for Forklifts, sell original and replacement  parts  If you have been waiting to get Industrial Traction Battery and Electric Vehicles  battery, then you do not need to worry because we are here to provide you the  perfect solution. We offer batteries that are free from any kind of troubles and give  best performance at the time of work. Parts and services for various types of  batteries are also offered from our end at cheap rates. 
+            </p>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                List of Customers</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li v-for='item of customer_list'>{{item}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='vueappfooter'>
+            <div class='footer'>
+                <div class="container footer-header ">
+                    <div class="row ">
+                        <div class="col-sm-8">
+                            <div class="footer-title">
+                                {{footer_data.footer_title}}
+                            </div>
+                            <div class="footer-subtitle">
+                                {{footer_data.footer_subtitle}}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="number-details" v-for='data in footer_data.number_detail'>
+                                {{data}}
+                            </div>
+                            <div class="email-details" v-for='data in footer_data.email_detail'>
+                                {{data}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-subheader">
+                    <div class="container">
+                        {{footer_data.footer_subheader}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="resources/js/mainscript.js"></script>
+    </body>
+
+</html>

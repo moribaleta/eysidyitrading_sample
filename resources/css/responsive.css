@@ -1,0 +1,33 @@
+.navbar-brand{
+    display: none;
+}
+
+@media only screen 
+    and (max-width : 760px){
+        .navbar-brand{
+            display: block;
+        }
+}
+@media only screen 
+    and (max-width : 500px){
+        .navbar-brand{
+            display: block;
+        }
+        .welcome-content{
+            padding: 0 16px;
+        }
+}
+
+@media only screen 
+    and (max-width : 400px){
+        .header-content{
+            margin-left: 16px;
+            font-size: 16px;
+        }
+        .text-content{
+            margin: 50px 8px 16px;
+        }
+        .text-content ul li{
+            font-size: 14px;
+        }
+}
