@@ -2,17 +2,17 @@ var footer_vue = new Vue({
     el: '#vueappfooter',
     data: {
         footer_data: {
-            footer_title: 'Ey Si Dy Trading Mfg. Corporation --Sample Website This website is developed by Gabriel Mori Baleta',
+            footer_title:'Ey Si Dy Trading Mfg. Corporation',
             footer_subtitle: 'Ey-Si-Dyi Trading & Mfg. Co. is your trusted provider of affordable services and products such as Industrial Traction Battery, Electric Vehicles Battery and parts of other various batteries.',
             number_detail: [
-                '(T)+63 2 5533981 / +63 2 8615473 / ',
-                '(M)+63 922 8238113 / +63 932 1311070'
+                '(T)+63 2 5555555 / +63 2 5555555  / ',
+                '(M)+63 2 5555555  / +63 2 5555555 '
             ],
-            email_detail: [
-                'arnold_enriquez@eysidyitrading.com ',
-                'inquire@eysidyitrading.com'
+            email_detail:[
+                'sample@eysidyitrading.com ',
+                'sample2@eysidyitrading.com'
             ],
-            footer_subheader: 'Copyright © 2017 | EY SI DYI TRADING AND MFG.CO'
+            footer_subheader:'Copyright © 2017 | EY SI DYI TRADING AND MFG.CO Sample developed by Mori Baleta'
 
         }
     },
